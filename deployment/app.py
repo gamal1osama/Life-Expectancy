@@ -1,3 +1,45 @@
+from sklearn.svm import SVR
+from catboost import CatBoostRegressor
+from sklearn.tree import DecisionTreeRegressor
+from xgboost import XGBRegressor, XGBRFRegressor
+from sklearn.linear_model import LinearRegression, Ridge, Lasso, ElasticNet
+from sklearn.model_selection import RandomizedSearchCV, GridSearchCV
+from sklearn.ensemble import (
+    RandomForestRegressor,
+    ExtraTreesRegressor,
+    AdaBoostRegressor,
+    GradientBoostingRegressor,
+    VotingRegressor,
+    RandomForestRegressor,
+    StackingRegressor,
+    )
+
+from sklearn.metrics import r2_score, make_scorer
+from sklearn.model_selection import train_test_split
+
+# For preprocessing
+from sklearn.pipeline import Pipeline
+from sklearn.impute import SimpleImputer, KNNImputer
+from sklearn.base import BaseEstimator, TransformerMixin
+from sklearn.preprocessing import (
+    LabelEncoder,
+    StandardScaler,
+    RobustScaler,
+    OneHotEncoder,
+)
+
+from sklearn.metrics import mean_absolute_error
+
+import joblib
+import pickle
+import json
+
+
+
+
+
+
+
 import streamlit as st
 import pandas as pd
 import joblib
