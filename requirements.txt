@@ -1,5 +1,7 @@
+catboost==1.2.8
 joblib==1.5.1
 numpy==1.26.4
 pandas==2.3.2
 scikit_learn==1.2.2
 streamlit==1.46.1
+xgboost==3.0.4
